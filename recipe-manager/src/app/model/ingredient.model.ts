@@ -1,9 +1,3 @@
-export class Ingredient {    
-    public name: string;
-    public count: number;
-
-    constructor(name: string, count: number){
-        this.name = name;
-        this.count = count;
-    }
+export class Ingredient {
+    constructor(public name: string, public count: number){}
 }
