@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../model/recipe.model'
 
 @Component({
   selector: 'app-recipe-book',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-book.component.css']
 })
 export class RecipeBookComponent implements OnInit {
+  public currentlySelectedRecipe: Recipe;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onRecipeSelected(selectedRecipe: Recipe){
+    this.currentlySelectedRecipe = selectedRecipe;
+  }
 }
