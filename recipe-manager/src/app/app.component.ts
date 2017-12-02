@@ -7,8 +7,8 @@ import { NavigationChoice } from 'app/model/navigation.enum';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public showRecipeBook: boolean = false;
-  public showShoppingList: boolean = true;
+  public showRecipeBook: boolean = true; // set as default starting place
+  public showShoppingList: boolean = false;
 
 
   setChosenComponent(componentName: NavigationChoice){
